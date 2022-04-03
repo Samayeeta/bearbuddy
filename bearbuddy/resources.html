@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bear Buddy</title>
+<link rel="stylesheet" href="home.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+<div id="mySidenav" class="navside">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">About</a>
+  <a href="quiz.html">Bear Quizzes!</a>
+  <a href="resources.html">Resources</a>
+  <a href="todo.html">To-Do</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<h1>Resources</h1>
+<div class="resourcesinfo">
+<p> The following symptoms could indicate an underlying mental health problem: </p>
+<ul>
+  <li>Mood swings or frequent emotional outbursts
+</li>
+  <li>Hallucinations or delusions</li>
+  <li>Perplexity or unexplained memory loss</li>
+  <li>Thoughts of hurting yourself or others, feelings of sadness, anger, fear, worry, or anxiety that are frequent or persistent</li>
+  <li>A strong apprehension or anxiety about gaining weight</li>
+  <li>Drastic alterations in eating or sleeping habits</li>
+</ul>  
+<p>
+Get help right away if you're thinking about hurting yourself or someone else. Make an appointment with your doctor if you have any of the other symptoms on this list. They may refer you to a mental health specialist and other resources once they have ruled out a physical cause for your symptoms.</p>
+</div>
+<div class="questionpart">
+<p id="motivfact">Click the button below for some magic✨</p>
+<button id="displayfact">Click Me</button>
+</div>
+  <br>
+  <br> 
+  <br>
+<h1>Here are some organizations!</h1>
+<div class= quizpic>
+<p> You will be redirected to the organization's resources page when you click on the image.</p>
+<div class="correct-ratio">
+<img onclick="window.location.href='https://www.mhanational.org/local-resources'" class ="imgratio" src= "https://pbs.twimg.com/profile_images/1321920288158851073/Dy3Ds8yn_400x400.png"> 
+<p> Founded in 1909,  Mental Health America (MHA) is the world's leading community-based nonprofit dedicated to addressing the needs of those living with mental illness and promoting the overall mental health of all.
+</p>
+<img onclick="window.location.href='https://www.dbsalliance.org/wellness/treatment-options/therapy/'" class ="imgratio" src= "https://www.dbsalliance.org/wp-content/uploads/2019/05/color_square_format.jpg">
+<p>The Depression and Bipolar Support Alliance, formerly known as the National Depressive and Manic Depressive Association, is a non-profit organisation that offers support groups to people suffering from depression or bipolar disorder, as well as their friends and family.</p>
+<img onclick="window.location.href='https://jedfoundation.org/mental-health-resource-center/'" class ="imgratio" src= "https://i.ytimg.com/an/OqhVJmRb3NU/3709764924182054425_mq.jpg?v=5f5e62f8"> 
+<p>The Jed Foundation is a non-profit organisation that promotes emotional health and prevents suicide among teens and young adults. JED collaborates with high schools and colleges to improve their mental health, substance abuse, and suicide prevention programmes and systems.</p>
+<img onclick="window.location.href='https://www.thetrevorproject.org/resources/'"  class ="imgratio" src="https://www.thetrevorproject.org/wp-content/uploads/2021/09/METADATA_IMG_ORANGE-BG.jpg">
+<p> The Trevor Project is a non-profit organisation based in the United States that was founded in 1998 to promote suicide prevention among lesbian, gay, bisexual, transgender, queer, and questioning youth. It operates The Trevor Lifeline, a confidential service with trained counsellors, via a toll-free phone number.</p>
+<img onclick="window.location.href='https://www.crisistextline.org/resources/'"  class ="imgratio" src="https://s12982.pcdn.co/wp-content/uploads/2019/03/0002_Crisis-Text-Line-Logo.jpg"> 
+<p>Crisis Text Line is a non-profit organisation that provides free mental health texting services through confidential crisis intervention via SMS message around the world. The organization's services are available around the clock, every day of the year.</p>
+</div>
+</div>
+<div class="resourcesinfo"> </div>
+<a href="https://www.healthline.com/health/mental-health-resources#_noHeaderPrefixedContent">Credits:Healthline</a>
+</body>
+  <script src="fact.js"> </script>
+</html>

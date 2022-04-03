@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bear Buddy</title>
+<link rel="stylesheet" href="home.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+<div id="mySidenav" class="navside">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">About</a>
+  <a href="quiz.html">Bear Quizzes!</a>
+  <a href="resources.html">Resources</a>
+  <a href="todo.html">To-Do</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="quizmiddle">
+<header>
+		<h1> What Netflix Show Should You Watch?</h1>
+  <img src ="netflix.png">
+	</header>
+
+	<main>
+  <p> <b>Choose your favorite genre(s)?</b> </p>
+		<div class="question">
+
+			<div class="answer-choice">
+        <br>
+        <button id="q1a1">Romance/Comedy/Drama</button>
+      </div>
+      <div class="answer-choice">
+        <br>        
+        <button id="q1a2">Mystery/Thriller/Horror</button>
+      </div>
+    </div> 
+<br>    
+    <p> <b> Pick a snack! </b></p>
+    <div class="question">
+
+      <div class="answer-choice">
+        <br>
+        <button id="q2a1">Chocolate/Brownies/Cookies</button>
+      </div>
+
+      <div class="answer-choice">
+        <br>
+        <button id="q2a2">Nuggets/Cheese Balls/Popcorn</button>
+      </div>
+
+    </div> 
+<br> 
+    <p><b>How do your friends describe you?</b></p>
+    <div class="question">
+
+      <div class="answer-choice">
+        <br>
+        <button id="q3a1">Energetic/Open/Funny</button>
+      </div>
+
+      <div class="answer-choice">
+        <br>
+        <button id="q3a2">Calm/Smart/Cool</button>
+      </div>
+
+    </div> 
+<br>    
+    <p> <b> Pick a sport</p> </b>
+    <div class ="question">
+      <div class="answer-choice">
+        <br>
+        <button id ="q4a1"> Swimming</button>
+      </div>
+      <div class ="answer-choice">
+        <br>
+        <button id="q4a2"> Cricket </button>
+        </div>
+</div>
+<br>
+    <p><b> What is the most important thing to you? </b></p>
+    <div class ="question">
+      <div class="answer-choice">
+        <br>
+        <button id ="q5a1"> Friends </button>
+      </div>
+      <div class ="answer-choice">
+        <br>
+        <button id="q5a2"> Food </button>
+        </div>
+</div>
+ <br>
+    <h2 id="result">You should watch....</h2>
+    <p id="resultinfo"> Did you know? According to research by Martin Seligman, a leading positive psychology researcher at the University of Pennsylvania, experiencing positive emotions is one of the building blocks of our wellbeing. It would therefore make sense for us to watch more feelgood shows to increase positive emotions.  </p>
+   <button id="restart">Restart </button>
+    </div>
+</main>
+</body>
+<script src="quiz.js"></script>
+</html>

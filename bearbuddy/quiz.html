@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bear Buddy</title>
+<link rel="stylesheet" href="home.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+<div id="mySidenav" class="navside">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">About</a>
+  <a href="quiz.html">Bear Quizzes!</a>
+  <a href="resources.html">Resources</a>
+  <a href="todo.html">To-Do</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+		<h1> Bear Quizzes! </h1>
+		<p class="quizinfo"> Feeling bored right now? Play some Bear Quizzes!</p>
+<div class="quizpic">   <img src="aboutquiz.png"> </div>
+	</header>
+<div class="quizinfo">
+<p class="headquiz"> Motivation Quiz! Get some motivation. </p>
+<button onclick="location.href = 'motiv.html';" id="myButton" class="float-left submit-button" >Click Me </button>
+<br>
+<p class="headquiz"> What Netflix Quiz should you watch next? </p>
+<button onclick="location.href = 'netflix.html';" id="myButton" class="float-left submit-button" >Click Me </button>
+<br>
+</div>
+</body>
+</html>

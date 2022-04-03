@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bear Buddy</title>
+<link rel="stylesheet" href="home.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+<div id="mySidenav" class="navside">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">About</a>
+  <a href="quiz.html">Bear Quizzes!</a>
+  <a href="resources.html">Resources</a>
+  <a href="todo.html">To-Do</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="app">
+  <h1 class="headline_main">Self Introspection To-Dos</h1>
+<p class="todoinfo">  Introspection and mindfulness (self-introspection) can actually increase your happiness permanently. Bear Buddy has an awesome feature: Adding your own self-introspection tasks and tracking them! </p>
+<p class="todoinfo"> Fill out the textbox below with your goal (Example: Meditating), then click the "Add" button. When you've finished your goal, simply click on it to remove it from the list.</p>
+  <main class="main">
+    <section class="todo-list">
+      <form class="form">
+        <label for="text"> <br> </label> <br>
+        <input id="text" type="text" name="text">
+<br> <br> <br>
+        <button class="submit1" type="submit">Add ⭐</button>
+      </form>
+
+      <div class="todos"></div>
+    </section>
+  </main>
+</div>
+</body>
+<script src="todo.js"></script>
+</html>

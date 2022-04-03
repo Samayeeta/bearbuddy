@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bear Buddy</title>
+<link rel="stylesheet" href="home.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+<div id="mySidenav" class="navside">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">About</a>
+  <a href="quiz.html">Bear Quizzes!</a>
+  <a href="resources.html">Resources</a>
+  <a href="todo.html">To-Do</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="quizmiddle">
+<header>
+		<h1> Get Some Motivation! </h1>
+  <p> Bear says:</p>
+  <img src ="motiv.png">
+	</header>
+
+	<main>
+  <p> <b>What is bothering you right now?</b> </p>
+		<div class="question">
+
+			<div class="answer-choice">
+        <br>
+        <button id="q1a1">Myself</button>
+      </div>
+      <div class="answer-choice">
+        <br>        
+        <button id="q1a2">Work/School/Studies</button>
+      </div>
+    </div> 
+<br>    
+    <p> <b> Do you procrastinate? </b></p>
+    <div class="question">
+
+      <div class="answer-choice">
+        <br>
+        <button id="q2a1">Yes</button>
+      </div>
+
+      <div class="answer-choice">
+        <br>
+        <button id="q2a2">Not much</button>
+      </div>
+
+    </div> 
+<br> 
+    <p><b>What do you procrastinate on?</b></p>
+    <div class="question">
+
+      <div class="answer-choice">
+        <br>
+        <button id="q3a1">Showing my true self</button>
+      </div>
+
+      <div class="answer-choice">
+        <br>
+        <button id="q3a2">Work/Studies</button>
+      </div>
+
+    </div> 
+<br>    
+    <p> <b>Do you like sports?</p> </b>
+    <div class ="question">
+      <div class="answer-choice">
+        <br>
+        <button id ="q4a1"> No</button>
+      </div>
+      <div class ="answer-choice">
+        <br>
+        <button id="q4a2">Yes! </button>
+        </div>
+</div>
+<br>
+    <p><b>How happy are you right now? </b></p>
+    <div class ="question">
+      <div class="answer-choice">
+        <br>
+        <button id ="q5a1"> Eh </button>
+      </div>
+      <div class ="answer-choice">
+        <br>
+        <button id="q5a2"> I am happy! </button>
+        </div>
+</div>
+ <br>
+    <h2 id="result">*Motivation Generating*....</h2>
+    <p id="resultinfo"> </p>
+   <button id="restart">Restart </button>
+    </div>
+</main>
+</body>
+<script src="motivquiz.js"></script>
+</html>
